@@ -56,7 +56,7 @@ code {
   border-radius: 5px; /* ボタンの角を少し丸くする */
   cursor: pointer; /* マウスを乗せると指のマークに変わる（クリックできることを示す） */
   font-weight: bold; /* 文字を太くする */
-  font-size: 0.5vmin; /* 文字の大きさ */
+  font-size: 0.3vmin; /* 文字の大きさ */
   box-shadow: 2px 2px 5px rgba(255, 102, 0, 0.1); /* ボタンに影をつける */
   /*
     topとleftで指定した位置がボタンの中心に来るように微調整します。
