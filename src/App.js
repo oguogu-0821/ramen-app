@@ -470,7 +470,7 @@ const stationData = [
  {id:'midorigaoka',name:'緑ヶ丘',position:{top:'75.22%',left:'22.31%'},ramenShops:[]},
  {id:'kamitisato',name:'北千束',position:{top:'77.96%',left:'26.15%'},ramenShops:[]},
  {id:'ebaramati',name:'荏原町',position:{top:'83.70%',left:'30.28%'},ramenShops:[]},
- {id:'nakanobu',name:'中延',position:{top:'83.70%',left:'30.28%'},ramenShops:[]},
+{id:'nakanobu',name:'中延',position:{top:'84.91%',left:'33.10%'},ramenShops:[]},
  {id:'togosiginza',name:'戸越公園',position:{top:'84.83%',left:'38.28%'},ramenShops:[]},
  {id:'simokamiaki',name:'下神明',position:{top:'84.79%',left:'45.14%'},ramenShops:[]},
  {id:'nisiooi',name:'西大井',position:{top:'88.39%',left:'42.34%'},ramenShops:[]},
