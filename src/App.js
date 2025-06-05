@@ -839,7 +839,7 @@ function App() {
               <p>この駅には現在、おすすめのラーメン情報がありません。</p>
             )}
             {/* ポップアップを閉じるボタン */}
-            <button onClick={handleCloseModal} className="close-button">閉じる</button>
+            <button onClick={handleCloseModal} className="close-button">閉</button>
           </div>
         </div>
       )}

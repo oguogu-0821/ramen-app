@@ -91,12 +91,12 @@ transition: background-color 0.2s ease;
 /* ポップアップの中身の見た目 */
 .modal-content {
   background-color: white; /* 背景色 */
-  padding: 30px; /* 内側の余白 */
+  padding: 3vmin; /* 内側の余白 */
   border-radius: 10px; /* 角を丸くする */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* 影をつける */
   width: 90%; /* 横幅は親の90% */
   max-width: 600px; /* 最大横幅は600px */
-  max-height: 80%; /* 最大高さは親の80% */
+  max-height: 80vh; /* 最大高さは親の80% */
   overflow-y: auto; /* 内容が多ければ縦スクロールできるようにする */
   position: relative; /* 閉じるボタンを配置するために必要 */
 }
@@ -106,7 +106,8 @@ transition: background-color 0.2s ease;
   color: #333;
   margin-top: 0;
   border-bottom: 2px solid #eee; /* 下に線を入れる */
-  padding-bottom: 10px; /* 線との間に余白 */
+  padding-bottom: 1.5vmin; /* 線との間に余白 */
+  font-size: 3vmin;
 }
 
 /* ラーメン屋さんのリストの見た目 */
@@ -118,8 +119,8 @@ transition: background-color 0.2s ease;
 /* ラーメン屋さん一つ一つの項目の見た目 */
 .modal-content li {
   background-color: #f9f9f9; /* 薄い灰色の背景 */
-  padding: 15px;
-  margin-bottom: 10px; /* 下に余白 */
+  padding: 2vmin;
+  margin-bottom: 1.5vmin; /* 下に余白 */
   border-radius: 8px;
   border: 1px solid #eee; /* 薄い枠線 */
   text-align: left; /* 文字を左寄せ */
@@ -129,20 +130,26 @@ transition: background-color 0.2s ease;
 .modal-content li h3 {
   color: #555;
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0.8vmin;
+  font-size: 2.5vmin;
+}
+.modal-content li p{
+  font-size: 1.8vmin;
+  line-height: 1.4;
+  margin: 0;
 }
 
 /* ポップアップの閉じるボタンの見た目 */
 .close-button {
   position: absolute; /* modal-contentの中の好きな場所に置ける */
-  top: 15px; /* 上から15px */
-  right: 15px; /* 右から15px */
+  top: 1.5vmin; /* 上から15px */
+  right: 1.5vmin; /* 右から15px */
   background-color: #ccc; /* 灰色 */
   color: #333;
   border: none;
   border-radius: 50%; /* 完全な丸にする */
-  width: 90px;
-  height: 30px;
+  width: 5vmin;
+  height: 3vmin;
   font-size: 18px; /* 文字の大きさ */
   cursor: pointer;
   display: flex;
