@@ -752,11 +752,11 @@ const stationData = [
 {id:'sirokanetakanawa',name:'白金高輪',position:{top:'73.69%',left:'45.14%'},ramenShops:[]},
 {id:'takanawadai',name:'高輪台',position:{top:'76.40%',left:'42.57%'},ramenShops:[]},
 {id:'sirokanedai',name:'白金台',position:{top:'73.36%',left:'40.47%'},ramenShops:[]},
-{id:'',name:'',position:{top:'px',left:'px'},ramenShops:[]},
-{id:'',name:'',position:{top:'px',left:'px'},ramenShops:[]},
-{id:'',name:'',position:{top:'px',left:'px'},ramenShops:[]},
-{id:'',name:'',position:{top:'px',left:'px'},ramenShops:[]},
-{id:'',name:'',position:{top:'px',left:'px'},ramenShops:[]},
+{id:'hirosue',name:'末広町',position:{top:'45.28%',left:'61.98%'},ramenShops:[]},
+{id:'nisimagome',name:'西馬込',position:{top:'89.95%',left:'29.71%'},ramenShops:[]},
+{id:'hutaebasimae',name:'二重橋前',position:{top:'57.09%',left:'57.65%'},ramenShops:[]},
+{id:'taharatyo',name:'田原町',position:{top:'33.62%',left:'72.65%'},ramenShops:[]},
+{id:'kosuga',name:'小菅',position:{top:'15.54%',left:'76.63%'},ramenShops:[]},
 {id:'',name:'',position:{top:'px',left:'px'},ramenShops:[]},
 
 
