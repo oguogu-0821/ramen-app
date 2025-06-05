@@ -1,0 +1,144 @@
+/* src/App.css */
+
+/* アプリ全体の設定。余白などをなくします。 */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* アプリ全体の一番外側の箱 */
+.App {
+  text-align: center;
+  min-height: 100vh; /* 画面の高さいっぱいに広げる */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 上から表示 */
+  /* background-color: #f0f0f0; /* 背景色（任意） */ 
+}
+/* 路線図を表示するエリアの見た目 */
+.map-container {
+  width: 100%;
+  max-width: 3514px;
+  /* ★ここをあなたの路線図画像の縦横比に合わせて調整してください★ */
+  /* 例: 画像の横幅が1000pxで高さが800pxなら、heightをwidthの80%にすると良いです */
+  height: auto; /* まずは適当な高さで試して、必要なら調整してください */
+
+  /* ★ここをあなたの画像ファイル名 'line.png' に変更済みです★ */
+  background-image: url('./line.png');
+  background-size: contain; /* 画像がmap-containerの中に収まるように調整 */
+  background-repeat: no-repeat; /* 画像を繰り返さない */
+  background-position: center; /* 画像を中央に配置 */
+
+  position: relative; /* ★重要！この設定がないと、駅のボタンを自由に配置できません★ */
+  overflow: hidden; /* 画像がmap-containerからはみ出さないように隠す */
+  border: 1px solid #ccc; /* 枠線をつけて、どこまでがmap-containerか分かりやすくします */
+  margin-top: 20px; /* 上に少し余白 */
+}
+
+/* 駅のボタンの見た目 */
+.station-button {
+  position: absolute; /* ★重要！map-containerの中の好きな場所に置けるようになります★ */
+  padding: 4px 6px;
+  background-color: #009CD1; /* ボタンの背景色（シアン） */
+  color: #333; /* ボタンの文字の色 */
+  border: none; /* ボタンの枠線をなくす */
+  border-radius: 5px; /* ボタンの角を少し丸くする */
+  cursor: pointer; /* マウスを乗せると指のマークに変わる（クリックできることを示す） */
+  font-weight: bold; /* 文字を太くする */
+  font-size: 5%; /* 文字の大きさ */
+  box-shadow: 2px 2px 5px rgba(255, 102, 0, 0.1); /* ボタンに影をつける */
+  /*
+    topとleftで指定した位置がボタンの中心に来るように微調整します。
+    これをしないと、ボタンの左上が指定位置に来てしまい、見た目がずれてしまいます。
+  */
+  transform: translate(-50%, -50%);
+  white-space: nowrap; /* ボタン内の文字が改行されないようにする */
+  z-index: 50; /* 他の要素より手前に表示されるようにする（モーダルよりは下） */
+}
+
+/* ラーメン屋さんの情報が表示されるポップアップ（モーダル）の背景 */
+.modal-overlay {
+  position: fixed; /* 画面全体に固定 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* 半透明の黒い背景 */
+  display: flex; /* 中身を中央に配置するために必要 */
+  justify-content: center; /* 中身を横方向の中央に配置 */
+  align-items: center; /* 中身を縦方向の中央に配置 */
+  z-index: 1000; /* 他のどの要素よりも手前に表示されるようにする */
+}
+
+/* ポップアップの中身の見た目 */
+.modal-content {
+  background-color: white; /* 背景色 */
+  padding: 30px; /* 内側の余白 */
+  border-radius: 10px; /* 角を丸くする */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* 影をつける */
+  width: 90%; /* 横幅は親の90% */
+  max-width: 600px; /* 最大横幅は600px */
+  max-height: 80%; /* 最大高さは親の80% */
+  overflow-y: auto; /* 内容が多ければ縦スクロールできるようにする */
+  position: relative; /* 閉じるボタンを配置するために必要 */
+}
+
+/* ポップアップ内のタイトル */
+.modal-content h2 {
+  color: #333;
+  margin-top: 0;
+  border-bottom: 2px solid #eee; /* 下に線を入れる */
+  padding-bottom: 10px; /* 線との間に余白 */
+}
+
+/* ラーメン屋さんのリストの見た目 */
+.modal-content ul {
+  list-style: none; /* リストの先頭の点々を消す */
+  padding: 0; /* 左側の余白をなくす */
+}
+
+/* ラーメン屋さん一つ一つの項目の見た目 */
+.modal-content li {
+  background-color: #f9f9f9; /* 薄い灰色の背景 */
+  padding: 15px;
+  margin-bottom: 10px; /* 下に余白 */
+  border-radius: 8px;
+  border: 1px solid #eee; /* 薄い枠線 */
+  text-align: left; /* 文字を左寄せ */
+}
+
+/* ラーメン屋さんの名前 */
+.modal-content li h3 {
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* ポップアップの閉じるボタンの見た目 */
+.close-button {
+  position: absolute; /* modal-contentの中の好きな場所に置ける */
+  top: 15px; /* 上から15px */
+  right: 15px; /* 右から15px */
+  background-color: #ccc; /* 灰色 */
+  color: #333;
+  border: none;
+  border-radius: 50%; /* 完全な丸にする */
+  width: 90px;
+  height: 30px;
+  font-size: 18px; /* 文字の大きさ */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
