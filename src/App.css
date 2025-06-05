@@ -18,6 +18,7 @@ code {
 /* アプリ全体の一番外側の箱 */
 .App {
   text-align: center;
+  max-height: auto;
   min-height: 100vh; /* 画面の高さいっぱいに広げる */
   display: flex;
   flex-direction: column;
@@ -28,7 +29,7 @@ code {
 /* 路線図を表示するエリアの見た目 */
 .map-container {
   width: 100%;
-  max-width: 3514px;
+  max-width: 992px;
   /* ★ここをあなたの路線図画像の縦横比に合わせて調整してください★ */
   /* 例: 画像の横幅が1000pxで高さが800pxなら、heightをwidthの80%にすると良いです */
   height: auto; /* まずは適当な高さで試して、必要なら調整してください */
@@ -65,7 +66,13 @@ code {
   white-space: nowrap; /* ボタン内の文字が改行されないようにする */
   z-index: 50; /* 他の要素より手前に表示されるようにする（モーダルよりは下） */
 }
-
+.line-map-image{
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
 /* ラーメン屋さんの情報が表示されるポップアップ（モーダル）の背景 */
 .modal-overlay {
   position: fixed; /* 画面全体に固定 */
