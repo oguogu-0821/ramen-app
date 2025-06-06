@@ -571,7 +571,7 @@ const stationData = [
  {id:'sinkouenji',name:'新高円寺',position:{top:'37.04%',left:'11.12%' },ramenShops:[]},
  {id:'higasikouenji',name:'東高円寺',position:{top:'38.90%',left:'13.49%' },ramenShops:[]},
  {id:'sinakano',name:'新中野',position:{top:'38.98%',left:'15.00%' },ramenShops:[]},
- {id:'honantyo',name:'方南町',position:{top:'44.11%',left:'16.16%' },ramenShops:[{ name:'クラム＆ボニート　貝節麺ライク',description:'店名の通り貝が前面に出たあっさりとしたラーメン。',rating:3.75},]},
+ {id:'honantyo',name:'方南町',position:{top:'44.11%',left:'16.16%' },ramenShops:[{ name:'クラム＆ボニート　貝節麺ライク',description:'店名の通り貝が前面に出たあっさりとしたラーメン。貝の旨味が凝縮された一杯。',rating:3.75},]},
  {id:'nakanohujimityo',name:'中野富士見町',position:{top:'42.29%',left:'16.16%' },ramenShops:[]},
  {id:'nakanosinbasi',name:'中野新橋',position:{top:'40.48%',left:'16.13%' },ramenShops:[]},
  {id:'nisisinjuku',name:'西新宿',position:{top:'38.98%',left:'22.80%' },ramenShops:[]},
