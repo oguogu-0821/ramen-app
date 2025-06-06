@@ -100,24 +100,6 @@ transition: background-color 0.2s ease;
   overflow-y: auto; /* 内容が多ければ縦スクロールできるようにする */
   position: relative; /* 閉じるボタンを配置するために必要 */
 }
-/* スマートフォン向け（画面幅が768px以下の場合に適用） */
-@media (max-width: 768px) {
-  .station-button {
-    font-size: 10px; /* スマートフォンでは文字を少し小さく */
-    padding: 3px 5px; /* パディングも小さく */
-  }
-  .modal-content {
-    width: 95%; /* ポップアップを少し広げる */
-    padding: 20px; /* パディングを減らす */
-  }
-  .modal-content h2 {
-    font-size: 1.2em; /* タイトルを少し小さく */
-  }
-  .modal-content li {
-    padding: 10px; /* リストのパディングを減らす */
-  }
-}
-
 /* ポップアップ内のタイトル */
 .modal-content h2 {
   color: #333;
