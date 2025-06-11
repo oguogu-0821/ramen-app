@@ -386,7 +386,7 @@ const stationData = [
  {id:'senzokuike',name:'洗足池',position:{top:'80.47%',left:'23.55%'},ramenShops:[]},
  {id:'nagahara',name:'長原',position:{top:'80.47%',left:'24.89%'},ramenShops:[]},
  {id:'hatanodai',name:'旗の台',position:{top:'79.90%',left:'27.69%'},ramenShops:[]},
- {id:'ebaranakanobu',name:'荏原中延',position:{top:'77.68%',left:'30.36%'},ramenShops:[]},
+ {id:'ebaranakanobu',name:'荏原中延',position:{top:'77.68%',left:'30.36%'},ramenShops:[{name:'中華そば　多賀野',description:'朝の８時半から整理券を配布している老舗。力強い動物系の出汁と全粒粉入りのストレート麺とのハーモニーを楽しめる。',rating:3.89}]},
  {id:'togosiginza',name:'戸越銀座',position:{top:'77.68%',left:'31.47%'},ramenShops:[]},
  {id:'oosakihirokouji',name:'大崎広小路',position:{top:'77.68%',left:'32.58%'},ramenShops:[]},
  {id:'tidorimati',name:'千鳥町',position:{top:'92.86%',left:'30.33%'},ramenShops:[]},
