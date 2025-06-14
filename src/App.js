@@ -501,7 +501,7 @@ const stationData = [
  {id:'ikenoue',name:'池ノ上',position:{top:'58.39%',left:'17.59%' },ramenShops:[]},
  {id:'komabatodaimae',name:'駒場東大前',position:{top:'59.28%',left:'23.19%' },ramenShops:[]},
  {id:'sinsen',name:'神泉',position:{top:'59.28%',left:'27.29%' },ramenShops:[{ name:'喜楽',description:'都内随一のもやしラーメン。動物系のスープにフライドオニオンが香ばしさを与え、唯一無二の味を形成している。',rating:3.76}]},
- {id:'ikejiriohasi',name:'池尻大橋',position:{top:'59.93%',left:'25.50%' },ramenShops:[{ name:'八雲',description:'プリップリのワンタン、滋味にあふれたスープ。すべてにおいて完成度の高い感動の一杯。',rating:3.77}]},
+ {id:'ikejiriohasi',name:'池尻大橋',position:{top:'59.93%',left:'25.50%' },ramenShops:[{name:'中華そば 千乃鶏',description:'  油そばは夜限定。もちもちの麺に醤油のキレを感じる濃いめのタレがマッチ。卵黄を割れば円やかになり美味しい。',rating:3.69},{ name:'八雲',description:'プリップリのワンタン、滋味にあふれたスープ。すべてにおいて完成度の高い感動の一杯。',rating:3.77}]},
  {id:'sangendyaya',name:'三軒茶屋',position:{top:'64.93%',left:'21.12%' },ramenShops:[{name:'臥龍',description:'軍鶏のあっさりとした出汁が特徴の鶏白湯。無化調で鶏の旨味だけで構成されている。',rating:3.66},]},
  {id:'komazawadaigaku',name:'駒澤大学',position:{top:'66.87%',left:'17.64%' },ramenShops:[]},
  {id:'sakurasinmati',name:'桜新町',position:{top:'66.87%',left:'15.68%' },ramenShops:[]},
