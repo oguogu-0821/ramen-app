@@ -26,7 +26,7 @@ const stationData = [
     id: 'shinjuku',
     name: '新宿',
     position: { top: '41.36%', left: '30.17%' },
-    ramenShops: [{name:'麺屋　翔　本店',description:'インパクトにはやや欠けるものの綺麗なラーメンという印象。欠点という欠点がない優等生な一杯。',rating:3.78},{ name:'ラーメン二郎　新宿小滝橋通り店',description:'直系二郎の中でも一味違った一杯。好みが別れると思う。',rating:3.57},{name:'ラーメン二郎　歌舞伎町店',description:'NS系の二郎。テボでゆでられた麺、乳化したスープが特徴。他の店と比べると夜遅くまで営業している。',rating:3.66},],
+    ramenShops: [{name:'麺屋　翔　本店',description:'インパクトにはやや欠けるものの綺麗なラーメンという印象。欠点という欠点がない優等生な一杯。差別化されておらず、ここを食べに行くために出かけるほどではない。近くにあればぜひ。',rating:3.78},{ name:'ラーメン二郎　新宿小滝橋通り店',description:'直系二郎の中でも一味違った一杯。好みが別れると思う。',rating:3.57},{name:'ラーメン二郎　歌舞伎町店',description:'NS系の二郎。テボでゆでられた麺、乳化したスープが特徴。他の店と比べると夜遅くまで営業している。',rating:3.66},],
   },
   {
     id: 'shibuya',
@@ -44,7 +44,7 @@ const stationData = [
     id: 'ueno',
     name: '上野',
     position: { top: '33.86%', left: '65.31%' },
-    ramenShops: [{ name:'一蘭　アトレ上野山下口店',description:'癖のない豚骨ラーメン。麺量が少ないので替え玉は必須',rating:3.38}],
+    ramenShops: [{ name:'一蘭　アトレ上野山下口店',description:'癖のない豚骨ラーメン。麺量が少ないので替え玉は必須。いまいち',rating:3.38}],
   },
   {
     id: 'shinagawa',
@@ -64,13 +64,13 @@ const stationData = [
     id: 'akihabara',
     name: '秋葉原',
     position: { top: '42.98%', left: '64.91%' },
-    ramenShops: [{ name:'麺処　ほん田　秋葉原本店',description:'魚介の風味が漂うスープをツルツルの麺に絡めてすすればとんでもなくおいしい。王道を往く醤油ラーメン。',rating:3.77},],
+    ramenShops: [{ name:'麺処　ほん田　秋葉原本店',description:'魚介の風味が漂うスープをツルツルの麺に絡めてすすればとんでもなくおいしい。王道を往く醤油ラーメン。うまいが、値段は高め。',rating:3.77},],
   },
   {
     id: 'yurakucho',
     name: '有楽町',
     position: { top: '61.70%', left: '63.21%' },
-    ramenShops: [{name:'麺屋ひょっとこ　交通会館店',description:'狭いスペースから提供される絶品塩ラーメン。さわやかであっさりとした和風系の出汁が効いた一杯。',rating:3.77},],
+    ramenShops: [{name:'麺屋ひょっとこ　交通会館店',description:'狭いスペースから提供される絶品塩ラーメン。さわやかであっさりとした和風系の出汁が効いた一杯。うまい',rating:3.77},],
   },
   {
     id: 'shimbashi',
@@ -82,13 +82,13 @@ const stationData = [
     id: 'hamamatsucho',
     name: '浜松町',
     position: { top: '74.33%', left: '57.49%' },
-    ramenShops: [{ name:'MENクライ',description:'もちもち触感の麺に甘辛いタレが絡み、餅を食べているかのような一杯。',rating:3.75},],
+    ramenShops: [{ name:'MENクライ',description:'もちもち触感の麺に甘辛いタレが絡み、餅を食べているかのような一杯。ちょっとピリ辛',rating:3.75},],
   },
   {
     id: 'tamachi',
     name: '田町(三田)',
     position: { top: '75.34%', left: '55.09%' },
-    ramenShops: [{name:'ラーメン二郎　三田本店',description:'非乳化で朝から営業している二郎の原点。麺は柔らかめなので固めを注文することを進めたい。',rating:3.77},],
+    ramenShops: [{name:'ラーメン二郎　三田本店',description:'非乳化で朝から営業している二郎の原点。麺は柔らかめなので固めを注文することを進めたい。味にブレあり。',rating:3.77},],
   },
   {
     id: 'gotanda',
@@ -124,7 +124,7 @@ const stationData = [
     id: 'shinjuku-gyoemmae',
     name: '新宿御苑前',
     position: { top: '43.38%', left: '37.45%' },
-  ramenShops: [{name:'RAMEN MATSUI',description:'美しすぎるビジュアル、冴えわたる醤油感、ジューシーな鴨チャーすべてが美味しい完成度の高いラーメン。',rating:3.84},{name:'Ramen Afro Beats',description:'鶏白湯スープを最後に泡立てることでさらなる円やかさを実現した一杯。和え玉もあるがスープが少し少ないのが難点。',rating:3.73},{ name:'SOBA　HOUSE金色不如帰　新宿御苑本店',description:'あり得ないくらいに完成度の高い一杯。貝を基調としたスープに自家製の柔らかめのスープがとってもおいしい。',rating:3.78}],
+  ramenShops: [{name:'支那蕎麦 澤田',description:'昆布水つけ麵がおいしい。つけ汁は醤油で魚介はあまり感じない。余った昆布水でスープ割をおすすめしたい。来訪の価値はある。',rating:3.76},{name:'RAMEN MATSUI',description:'美しすぎるビジュアル、冴えわたる醤油感、ジューシーな鴨チャーすべてが美味しい完成度の高いラーメン。',rating:3.84},{name:'Ramen Afro Beats',description:'鶏白湯スープを最後に泡立てることでさらなる円やかさを実現した一杯。和え玉もあるがスープが少し少ないのが難点。',rating:3.73},{ name:'SOBA　HOUSE金色不如帰　新宿御苑本店',description:'あり得ないくらいに完成度の高い一杯。貝を基調としたスープに自家製の柔らかめのスープがとってもおいしい。',rating:3.78}],
   },
   {
     id: 'yotsuya',
