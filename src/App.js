@@ -547,7 +547,7 @@ const stationData = [
  {id:'omorikaigan',name:'大森海岸',position:{top:'93.87%',left:'51.17%' },ramenShops:[]},
  {id:'tatiaigawa',name:'立会川',position:{top:'92.45%',left:'51.17%' },ramenShops:[]},
  {id:'samesu',name:'鮫洲',position:{top:'90.88%',left:'51.17%' },ramenShops:[]},
- {id:'aomonoyokotyo',name:'青物横丁',position:{top:'88.29%',left:'51.17%' },ramenShops:[]},
+ {id:'aomonoyokotyo',name:'青物横丁',position:{top:'88.29%',left:'51.17%' },ramenShops:[{name:'横浜家系ラーメン 裏大輝家 青物横丁店',description:'日吉にもある大輝家の系列店チャーシューの肉厚ともちもちの麺にひたすら圧倒させられ，食べても食欲を引き立たせる一杯。スープはおかわりし放題のライス（100円）との相性◎',rating:3.67}]},
  {id:'sinbaba',name:'新馬場',position:{top:'86.56%',left:'51.17%' },ramenShops:[]},
  {id:'kitasinagawa',name:'北品川',position:{top:'84.83%',left:'51.17%' },ramenShops:[{name:'中華そば　和渦　TOKYO',description:'キリっとしたた口当たりのスープに細麺が合わさりクオリティの高さを見せつけてくる、満足感の高い一杯。',rating:3.79},{name:'ラーメン二郎　品川店',description:'二郎の中では食べやすいあっさりとした二郎。麺量も一般的（３００弱）で撃沈する人も少ない。',rating:3.71},]},
  {id:'tukijisijo',name:'築地市場',position:{top:'71.27%',left:'71.89%' },ramenShops:[{name:'麺処　銀笹',description:'魚介の旨味が聞いた優等生な一杯。アブラれたチャーシューが香ばしく良いアクセントを残す。',rating:3.78},]},
